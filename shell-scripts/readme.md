@@ -1,4 +1,4 @@
-# Script de Alocação de Arquivos em Shell
+# Alocação de Arquivos em dispositivos
 
 Este script em Shell é projetado para alocar arquivos em um dispositivo externo até que o espaço disponível seja ocupado. Ele pode ser útil para testes de desempenho de armazenamento, criação de grandes conjuntos de dados de teste, entre outros casos de uso.
 

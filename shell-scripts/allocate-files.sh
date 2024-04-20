@@ -42,7 +42,7 @@ echo "Número máximo de arquivos que podem ser alocados: $max_files"
 # Criar arquivos até que o espaço disponível seja ocupado
 i=1
 while [ $i -le $max_files ]; do
-    dd if=/dev/zero of="$mount_point/file2_$i.dat" bs=1G count="$max_file_size_gb" status=progress
+    dd if=/dev/zero of="$mount_point/file_$i.dat" bs=1G count=$max_file_size_gb status=progress
     echo "Arquivo $i criado"
     i=$((i + 1))
 done

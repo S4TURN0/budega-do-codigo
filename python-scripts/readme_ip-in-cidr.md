@@ -17,7 +17,7 @@ Certifique-se de modificar as variáveis `input_file_path`, `output_file_path` e
 
 Execute o script da seguinte maneira:
 ```
-python3 ./filter_ips.py
+python3 ./ip-in-cidr.py
 ```
 
 ## Funcionamento

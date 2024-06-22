@@ -24,7 +24,7 @@ generate_ssh_key() {
     echo "Gerando uma nova chave SSH..."
     read -sp "Digite a senha para a nova chave SSH: " passphrase
     echo
-    ssh-keygen -t rsa -b 4096 -C "seu_email@exemplo.com" -f "$KEY_PATH" -N "$passphrase"
+    ssh-keygen -t rsa -b 4096 -f "$KEY_PATH" -N "$passphrase"
 }
 
 # Função para adicionar a chave ao agente SSH
@@ -94,7 +94,7 @@ main() {
     test_ssh_connection
 
     echo -e "\nSe a conexão foi bem-sucedida, você pode clonar o repositório usando:"
-    echo " $ git clone git@github.com:usuario/repositorio.git"
+    echo " $ git clone git@github.com:organization/repositorio.git"
 }
 
 # Executar a função principal
